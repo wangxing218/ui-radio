@@ -1,0 +1,80 @@
+@charset "utf-8";
+
+/*ui-radio 单选样式，可根据实际项目需求进行调整*/
+
+input.ui-radio {
+    margin: 0;
+    margin-right: -20px;
+    position: relative;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    vertical-align: text-bottom;
+}
+
+span.ui-radio {
+    display: inline-block;
+    border: 2px solid #ccc;
+    background-color: #fff;
+    height: 16px;
+    width: 16px;
+    border-radius: 20px;
+    vertical-align: text-bottom;
+    cursor: pointer;
+    outline: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    overflow: hidden;
+}
+
+span.ui-radio:after {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 10px;
+    margin: 3px;
+    border-radius: 16px;
+    background-color: #ccc;
+}
+
+input.ui-radio:checked+span.ui-radio {
+    border-color: #80C532;
+}
+
+input.ui-radio:checked+span.ui-radio:after {
+    background-color: #80C532;
+}
+
+input.ui-radio:disabled + span.ui-radio {
+    filter: alpha(opacity=60);
+    opacity: .6;
+    cursor: not-allowed;
+}
+
+
+/*ie8-兼容*/
+
+span.ui-radio.on,span.ui-radio.off {
+    height: 20px;
+    width: 20px;
+    border: none;
+    background: transparent url(ui-radio.png) no-repeat 0 0;
+}
+
+ span.ui-radio.on:after,
+ span.ui-radio.off:after {
+    display: none;
+}
+
+span.ui-radio.on {
+    background-position: 0 -30px;
+}
+
+span.ui-radio.disabled {
+    filter: alpha(opacity=60);
+    cursor: not-allowed;
+}
