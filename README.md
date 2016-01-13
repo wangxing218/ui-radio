@@ -21,8 +21,8 @@ ur.change = function(val, item) {
 // us.val(3)         //设置值
 // us.disable(2)      //禁用指定元素（不给参数时禁用所有radio）
 // us.enable(2)     //启用指定元素（不给参数时启用所有radio）
-//```
-
+//
+```
 ##兼容性
 IE8+, Chrome, Firefox, Edge, 360, Sougou 等主流浏览器;
 
