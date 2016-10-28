@@ -1,6 +1,6 @@
 #ui-radio 单选插件
 可统一radio在不同浏览器下的显示效果
-##[demo](http://wangxing218.github.io/ui-radio/test/demo.html)
+##[demo](https://wangxing218.github.io/ui-radio/test/demo.html)
 
 ##基于jquery,使用非常方便！
 ```javascript
